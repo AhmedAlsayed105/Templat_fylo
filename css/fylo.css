@@ -1,0 +1,533 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+/* start container */
+.container{
+    padding-right:15px ;
+    padding-left: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+/* small */
+@media (min-width:768px ){
+    .container{
+        max-width:750px ;
+    }
+}
+/* medium */
+@media (min-width:992px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media (min-width:1200px){
+    .container{
+        max-width: 1170px;
+    }
+}
+/* end container */
+/* start fylo */
+.fylo{
+    padding-top: 10px;
+    padding-bottom: 100PX;
+}
+.fylo .container{
+    
+}
+
+.fylo .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fylo .container .box ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: -90px;
+}
+@media (max-width:767px){
+    .fylo .container .box ul{
+        margin-right: -10px; 
+        gap: 5px;
+    }
+    .fylo .container .box ul li{
+        padding: 5px;
+    }
+}
+@media (min-width:768px){
+    .fylo .container .box ul{
+        margin-right: -10px; 
+        gap: 5px;
+    }
+    .fylo .container .box ul li{
+        padding: 5px;
+    }
+}
+.fylo .container .box ul li{
+    font-weight: bold; 
+    padding: 10px ;
+    background-color: #9e9e9e0f;
+    transition: 0.4s;
+    position:relative;
+}
+
+.fylo .container .box ul li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 38px;
+    top: 0; 
+    left: 0px;
+    z-index: -1;
+}
+.fylo .container .box ul li:hover::after{
+    background-color:rgb(0, 153, 255);
+}
+.fylo .container .box ul li:hover a{
+            color: white;
+}
+.fylo .container .box ul a{
+    color: hsl(243, 87%, 12%);
+}
+@media (max-width:768px){
+    .fylo .container .logo img{
+        height: 20px;
+    }
+}
+/* end fylo */
+/* asecound part */
+.fylo .more{
+    display: flex;
+}
+@media (max-width:768px ){
+    .fylo .more {
+    flex-direction: column;
+    }
+}
+.fylo .than{
+    
+}
+@media (max-width:768px){
+    .fylo .than{
+        margin-top: 220px;
+    }
+    .fylo .than h3{
+        text-align: center;
+    }
+    .fylo .than p{
+        text-align: center;
+    }
+}
+.fylo .than h3{
+    font-size: 30px;
+}
+.fylo .than p{
+    font-size: 19px;
+    color: #777;
+}
+.fylo form{
+    display: flex;
+    gap: 5px;
+}
+@media (max-width:767px ){
+    .fylo form{
+        justify-content: center;
+        display: block;
+    }
+}
+.fylo form input[type="email"]{
+    outline: none;
+    caret-color: #888;
+    width: 300px;
+}
+.fylo form input[type="submit"]{
+    background-color: #006abf;
+    color: white;
+    padding: 5px;
+    width: 150px;
+}
+@media (max-width:767px){
+    .fylo form input[type="submit"]{
+        width: 100%;
+        padding: 10px;
+
+}
+.fylo form input[type="email"]{
+    width: 100%;
+    padding: 10px;
+    margin: -1px 0 5px -1px;
+}
+}
+
+.fylo .more .image{
+    width: 60%;
+    position: relative;
+}
+.fylo .more img{
+    max-width: 100%;
+    position: absolute;
+    top: -216px;
+    right: -117px;
+}
+@media (max-width:767px){
+    .fylo .more .image{
+        width: 80%;
+    }
+    .fylo .more img{
+        max-width: 55%;
+        top: -493px;
+        right: 35px;
+    }
+}
+@media (max-width:375px){
+    .fylo .more .image{
+        width: 80%;
+    }
+    .fylo .more img{
+        max-width: 96%;
+        top: -570px;
+        right: -38px;
+    }
+}
+@media (min-width:768px) and (max-width:991px){
+    .fylo .more img{
+        display: none;
+    }
+}
+@media (min-width:992px) and (max-width:1100px){
+    .fylo .more img{
+        max-width: 85%;
+        top: -212px;
+        right: -5px;
+    }
+    }
+    /* end part one */
+    /* start social */
+    .social{
+        margin-top: 330px;
+        background-color: #f8f8fe;
+        position: relative;
+    }
+    @media (max-width:767px){
+        .social{
+            margin-top: 130px;
+            
+        }
+    }
+    .social .assa{
+        max-width: 100%;
+        top: -60px;
+        position: relative;
+    }
+    @media (max-width:767px){
+        .social .assa{
+            display: none;
+            
+        }
+    }
+    @media (max-width:767px){
+    }        .social .assa::before{
+            content:"";
+            position: absolute;
+            background-image: url("../image/bg-curve-mobile.svg");
+        }
+    .social .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width:767px){
+        .social .container{
+            flex-direction: column-reverse;
+        }
+    }
+    .social .container .box{
+    }
+    @media(max-width: 767px){
+        .social .container .box{
+            text-align: center;
+            line-height: 1.7;
+        }
+    }
+    .social .container .box h2{
+        font-size: 30px;
+    }
+    .social .container .box p{
+
+    }
+    .social .container .box .icon{
+        display: flex;
+        align-items: center;
+        border-bottom: solid 1px #4caf50;
+        width: 150px;
+        color: #4caf50;
+    }
+    .social .container .box .icon img{
+        position: absolute;
+        margin-left: 135px;
+    }
+    .social .container .box .more{
+        background-color: white;
+        width: 311px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border-radius: 16px;
+    }
+    @media(max-width: 767px){
+        .social .container .box .more{
+            margin: 20px 0px 30px 100px;
+        }
+    }
+    @media(max-width: 667px){
+        .social .container .box .more{
+            margin: 20px 0px 30px -10px;
+        }
+    }
+    .social .container .box .more img{
+        margin-top: 20px;
+        margin-left: 10px;
+        padding: 3px;
+    }
+    .social .container .box .more p{
+        line-height: 1.7;
+        margin-left: 10px;
+    }
+    .social .container .box .more .info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .social .container .box .more .info img{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    .social .container .box .more .info p{
+        margin-left: 15px;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    .social .container .box .more .info span{
+        color: #9e9e9e;
+        font-size: 13px;
+    }
+    .social .container .fox {
+        max-width: 50%;
+        position: relative;
+    }
+    @media(max-width:667px){
+        .social .container .fox{
+            max-width: 80%;
+        }
+    }
+    .social .container .fox img{
+        max-width: 100%;
+        margin: 0 0 0 45px;
+    }
+    @media(max-width:767px){
+        .social .container .fox img{
+            margin: 30px 0 0 130px;
+        }
+    }
+    @media(min-width:768px) and (max-width:991px){
+        .social .container .fox img{
+            margin: 30px 0 0 16px;
+        }
+    }
+    @media(max-width:667px){
+        .social .container .fox img{
+        margin: 35px 0 -20px 35px;
+        }
+    }
+
+    /* end social */
+    /* start five */
+    .five{
+        margin-top: 10px;
+        background-color: hsl(243, 87%, 12%);
+        height: 333px;
+        position: relative;
+    }
+    .five::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color:#ffffff29;
+        z-index: 0;
+    }
+    .five .container{
+        display: flex;
+    }
+    @media(max-width:768px){
+        .five .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .five .six{
+        color: white;
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: translate(0, 50%);
+    }
+    @media(max-width:768px){
+        .five .six{
+            margin-top: -95px;
+            text-align: center;
+        }
+    }
+    .five .six h3{
+        font-size: 30px;
+        opacity: 0.9;
+    }
+    .five .six  p{
+        font-size: 18px;
+        opacity: 0.7;
+        line-height: 1.5;
+    }
+    .five form{
+        position: relative;
+        top: 50%;
+        left: 0;
+        transform: translate(0, 50%);
+        display: flex;
+        gap:10px;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+    @media(max-width:768px){
+        .five form{
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+    .five form input[type="email"]{
+        padding: 8px 45px;
+    }
+    .five form input[type="submit"]{
+        width: 70%;
+        padding: 8px;
+        color: white;
+        background-color: #2196f3;
+        border: none;
+        margin-left: 0px;
+    }
+    @media(max-width:768px){
+        .five form input[type="submit"]{
+            margin-left: 40px;
+        }
+    }
+    /* start end */
+    .end{
+        background-color:  hsl(243, 87%, 15%);
+        position: relative;
+        height: 320px;
+        color: white;
+    }
+    @media(max-width:667px){
+        .end {
+            height: 470px;
+        }
+    }
+    .end .container{
+        top: 50%;
+        position: absolute;
+        transform: translate(0,-50%);
+    }
+.end .container img{
+    width: 140px;
+}
+.end .box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
+@media(max-width:768px) {
+    .end .box{
+        gap: 50px;
+    }
+}
+@media(max-width:667px){
+    .end .box{
+        display: flex;
+        flex-direction: column;
+        gap: 19px;
+    }
+}
+
+.end .box .more{
+    margin-top: 15px;
+}
+.end .box i{
+        display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.end .box i p{
+    margin: 15px;
+}
+.end .box  .finsh{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 20px;
+}
+
+@media(max-width:667px){
+    .end .box  .finsh
+    {
+        font-size: 16px;
+    }
+    .end .box  .max{
+        font-size: 16px;
+    }
+}
+.end .box  .finsh li{
+    cursor: pointer;
+}
+.end .box  .max{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    font-size: 20px;
+}
+.end .box .max li{
+    cursor: pointer;
+}
+.end .box .media{
+    display: flex;
+    gap: 18px;
+}
+@media(max-width:667px){
+    .end .box .media{
+        margin-left: 160px;
+    }
+}
+
+.end .box .media i{
+cursor: pointer;
+}
+    /* end */
